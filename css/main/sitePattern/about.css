@@ -1,0 +1,123 @@
+.about {
+    padding-bottom: 136px;
+}
+
+.about__wrapper-info {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+
+    position: relative;
+
+    background-image: url(../../../img/svg/background/spot/spot_2.svg);
+    background-repeat: no-repeat;
+    background-position: top -5px right -359px;
+}
+
+.about__info {
+    max-width: 560px;
+
+    margin-top: 304px;
+    margin-bottom: 867px;
+    margin-right: 67px;
+}
+
+.about__title {
+    font-family: var(--font-gotham);
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 100%;
+    color: var(--other-color-ocean);
+}
+.about__text {
+    font-family: var(--font-gotham);
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 140%;
+
+    margin-top: 37px;
+}   
+
+.about__laptop {
+    position: absolute;
+    top: 32px; left: 72px;
+}
+
+.about__concept {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    margin-top: 112px;
+}
+
+.about__concept-point {
+    width: 416px;
+    height: 552px;
+
+    background-color: var(--main-color-white);
+
+    border-radius: 24px;
+    border: 1px solid var(--border-color-gray);
+
+    transition: all 0.5s ease;
+
+}
+.about__concept-point:hover {
+    transform: translateY(-25px);
+    -webkit-box-shadow: 0px 20px 30px 9px rgba(0,0,0,0.38);
+    -moz-box-shadow: 0px 20px 30px 9px rgba(0,0,0,0.38);
+    box-shadow: 0px 20px 30px 9px rgba(0,0,0,0.38);
+}
+
+
+.about__concept-info {
+    padding-top: 224px;
+    padding-right: 48px;
+    padding-bottom: 104px;
+    padding-left: 32px;
+
+    background-image: url(../../../img/svg/icon/risk_icon.svg);
+    background-repeat: no-repeat;
+    background-position: center top 32px;
+    object-fit: cover;
+}
+
+.about__concept-warranty .about__concept-info {
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-bottom: 32px;
+
+    background-image: url(../../../img/svg/icon/honest_icon.svg);
+    background-repeat: no-repeat;
+    background-position: center top 32px;
+    object-fit: cover;
+}
+
+.about__concept-clear .about__concept-info {
+    padding-bottom: 0;
+    
+    background-image: url(../../../img/svg/icon/clearPay_icon.svg);
+    background-repeat: no-repeat;
+    background-position: center top 32px;
+    object-fit: cover;
+}
+
+.about__concept-title {
+    font-family: var(--font-gotham);
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 140%;
+
+    text-align: center;
+}
+.about__concept-description {
+    font-family: var(--font-gotham);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 140%;
+
+    text-align: center;
+
+    margin-top: 24px;
+}

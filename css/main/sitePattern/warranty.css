@@ -1,0 +1,208 @@
+.warranty {
+    padding-top: 147px;
+    padding-bottom: 29px;
+}
+
+.warranty__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    position: relative;
+}
+
+.warranty__spot {
+    position: absolute;
+
+    top: -147px; right: 355px;
+
+    z-index: -1;
+}
+
+.warranty__title {
+    font-family: var(--font-gotham);
+    font-size: 48px;
+    font-weight: 700;    
+    line-height: 230%;
+
+    text-align: center;
+}
+
+.warranty__list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 72px;
+}
+
+.warranty__item {
+    margin-top: 72px;
+
+    transition: all 0.5s ease;
+
+    border-radius: 13px;
+}
+.warranty__item:not(:last-child) {
+    margin-right: 56px;
+}
+.warranty__item:hover {
+    transform: translateY(-10px);
+    -webkit-box-shadow: 0px 20px 30px 9px rgba(0,0,0,0.38);
+    -moz-box-shadow: 0px 20px 30px 9px rgba(0,0,0,0.38);
+    box-shadow: 0px 20px 30px 9px rgba(0,0,0,0.38);
+}
+
+.warranty__box-first {
+    background-image: url(../../../img/svg/background/warranty/01.svg);
+    background-repeat: no-repeat;
+    background-position: right top 8px;
+    background-color: var(--other-color-yellow);
+}
+.warranty__box-second {
+    background-image: url(../../../img/svg/background/warranty/02.svg);
+    background-repeat: no-repeat;
+    background-position: right top 8px;
+    background-color: var(--border-color-ligthblue); 
+}
+.warranty__box-third {
+    background-image: url(../../../img/svg/background/warranty/03.svg);
+    background-repeat: no-repeat;
+    background-position: right top 8px;
+    background-color: var(--main-color-white);
+}
+
+.warranty__box {
+    max-width: 432px; width: 432px;
+    max-height: 296px; height: 296px;
+
+    border-radius: 13px;
+
+    position: relative;
+}
+
+.warranty__text {
+    padding: 32px;
+}
+
+.warranty__text-title {
+    font-family: var(--font-gotham);
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 140%;
+}
+.warranty__text-first .warranty__text-title {
+    color: var(--primary-color-blue);
+}
+.warranty__text-second .warranty__text-title {
+    color: var(--main-color-white);
+}
+.warranty__text-third .warranty__text-title {
+    color: var(--primary-color-blue);
+}
+
+.warranty__text-description {
+    font-family: var(--font-gotham);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 140%;   
+
+    margin-top: 10px;
+}
+
+.warranty__text-second {
+    padding-bottom: 0;
+}
+.warranty__text-third {
+    padding-bottom: 0;
+}
+
+.warranty__link {
+    display: block;
+    width: 48px; height: 48px;
+    background-color: var(--primary-color-ligthgreen);
+
+    border-radius: 8px;
+
+    position: absolute;
+    bottom: 24px;
+
+    transition: all 0.3s ease;
+}
+
+.warranty__link-wrapper span {
+    display: block;
+    width: 12px; height: 4px;
+    border-radius: 8px;
+    
+    background-color: var(--primary-color-blue);
+
+    position: absolute;
+    top: calc(50% - 4px); left: calc(50% - 6px);
+
+    transition: all 0.5s ease;
+    transform: rotate(45deg);
+}
+
+.warranty__link-wrapper span::after {
+    content: "";
+
+    display: block;
+    width: 12px; height: 4px;
+    border-radius: 8px;
+    
+    background-color: var(--primary-color-blue);
+
+    position: absolute;
+    top: 4px; left: 4px;
+    
+    transition: all 0.5s ease;
+    transform: rotate(90deg);
+}
+
+.warranty__link:hover {
+    background-color: var(--primary-color-yellow);
+}
+
+.warranty__link:active {
+    background-color: var(--primary-color-blue);
+}
+
+.warranty__link:active span,
+.warranty__link:active span::after {
+    background-color: var(--primary-color-ligthgreen);
+}
+
+.warranty__graph {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 48px;
+}
+
+.warranty__ability {
+    display: flex;
+    align-items: center;
+}
+
+.warranty__link-img {
+    width: 36px; height: 32px;
+}
+
+.warranty__ability span {
+    font-family: var(--font-gotham);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 140%;  
+    
+    margin-left: 16px; margin-right: 16px;
+}
+
+.warranty__ability a {
+    font-family: var(--font-gotham);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 140%;     
+    color: var(--other-color-ligthblue); 
+}

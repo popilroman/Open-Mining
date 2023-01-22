@@ -1,0 +1,129 @@
+.company {
+    padding-bottom: 104px;
+    position: relative;
+
+    overflow: hidden;
+}
+.company::before {
+    content: " ";
+
+    background-image: url(../../../img/svg/background/graph/graph_1.svg);
+    background-repeat: repeat-x;
+    background-position: center 0;
+    opacity: 0.09;
+    
+
+    position: absolute;
+    top: 0; left: 0; bottom: 0; right: -7px;
+    z-index: -2;
+}
+.company::after {
+    content: " ";
+
+    background-image: url(../../../img/svg/background/graph/graph_2.svg);
+    background-repeat: repeat-x;
+    background-position: center 0;
+    opacity: 0.09;
+    
+
+    position: absolute;
+    top: 141px; left: 0; bottom: 0; right: -44px;
+    z-index: -2;
+}
+
+.company__wrapper {
+    position: relative;
+}
+.company__crypto {
+    position: absolute;
+    z-index: -2;
+}
+.crypto__bitcoin {
+    top: 1px; right: 253px;
+}
+.crypto__ethereum {
+    top: 51px; right: 1558px;
+}
+.crypto__fct {
+    top: 198px; right: 1316px;
+}
+.crypto__ripple {
+    top: 282px; right: 351px;
+}
+
+.company__offer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.company__offer-title {
+    font-family: var(--font-gotham);
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 130%;
+    letter-spacing: 2px;
+    text-align: center;
+
+    max-width: 840px;
+}
+
+.company__offer-description {
+    font-family: var(--font-gotham);
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 130%;
+    text-align: center;
+
+    max-width: 560px;
+
+    margin-top: 56px;
+    margin-bottom: 57px;
+}
+
+.company__offer-btns {
+    width: 570px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.company__offer-btn1 {
+    width: 268px;
+
+    padding: 14px 0px;
+
+    font-size: 18px;
+    line-height: 155%;
+}
+
+.company__offer-btn2 {
+    width: 240px;
+    border: 1px solid var(--border-color-ligthblue);
+
+    padding: 14px 0px;
+
+    font-size: 18px;
+    line-height: 155%;
+
+    font-weight: 300;
+
+    color: var(--main-color-black);
+    background-color: transparent;
+}
+.company__offer-btn2:hover {
+    background-color: var(--primary-color-yellow);
+    color: var(--main-color-white);
+    border: 1px solid var(--primary-color-yellow);;
+}
+.company__offer-btn2:active {
+    background-color: var(--primary-color-blue);
+    color: var(--other-color-ligthblue);
+    border: 1px solid var(--primary-color-blue);;
+}
+.company__offer-btn2:disabled {
+    background-color: var(--border-color-gray);
+    color: --main-color-gray;
+    background: 1px solid var(--main-color-gray);
+}

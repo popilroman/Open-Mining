@@ -1,0 +1,40 @@
+:root {
+    --main-color-white: #FFFF;
+    --main-color-lightgray: #F5F5F5;
+    --main-color-gray: #A1A1A3;
+    --main-color-black: #333;
+
+    --primary-color-blue: #2B69DD;
+    --primary-color-yellow: #FBAC00;
+    --primary-color-ligthgreen: #87B645;
+
+    --other-color-green: #098B50;
+    --other-color-izumrud: #026057;
+    --other-color-red: #EB5757;
+    --other-color-ligthblue: #75ACFE;
+    --other-color-ocean: #1BAAD1;
+    --other-color-yellow: #F8DB73;
+    --other-color-gray: #E7E9E8;
+    --other-color-ligthgray: #E1E1E1;
+
+    --border-color-gray: #D7D7D7;
+    --border-color-ligthblue: #A0C4FA;
+
+    --font-futura: "Futura PT", sans-serif;
+    --font-gotham: "Gotham Pro", sans-serif;
+    --font-montserrat: "Montserrat", sans-serif;
+    --font-oxygen: "Oxygen", sans-serif;
+    --font-roboto: "Roboto", sans-serif;
+    
+
+}
+
+.container {
+    max-width: 1771px;
+    margin: 0 auto;
+}
+
+body {
+    color: var(--main-color-black);
+    background-color: var(--main-color-lightgray);
+}

@@ -1,0 +1,139 @@
+.faq {
+    padding-top: 142px;
+}
+
+.faq__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-image: url(../../../img/svg/background/spot/spot_4.svg);
+    background-repeat: no-repeat;
+    background-position: top 0px right -890px;
+}
+
+.faq__title {
+    font-family: var(--font-gotham);
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 100%;
+    text-align: center;
+
+    margin-bottom: 74px;
+}
+
+.faq__main {
+    width: 100%;
+    
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+}
+
+.faq__list {
+    max-width: 776px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.faq__item {
+    overflow: hidden;
+
+}
+.faq__item:not(:last-child) {
+    margin-bottom: 24px;
+}
+
+.faq__item input {
+    display: none;
+}
+
+.item__title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    cursor: pointer;
+
+    background-color: var(--primary-color-ligthgreen);
+
+    border-radius: 10px;
+    
+    padding: 48px 40px;
+
+    font-family: var(--font-gotham);
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 120%;
+    color: var(--main-color-white);
+
+    transition: all 0.5s ease;
+}
+
+.item__title span {
+    color: var(--primary-color-blue);
+    font-size: 30px;
+
+    transition: all 0.5s ease;
+}
+
+.item__content {
+    background-color: transparent;
+
+    height: 0;
+
+    transition: all 0.5s ease;
+}
+
+.item__text {
+    font-family: var(--font-gotham);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 140%;
+
+    height: 0;
+
+    padding: 40px 40px 0px 40px;
+
+    transition: all 0.5s ease;
+}
+
+.faq__item input:checked ~ .item__content {
+    height: 166px;
+}
+
+.faq__item input:checked ~ .item__content .item__text {
+    height: 166px;
+}
+
+.faq__item input:checked + .item__title span {
+    transform: rotate(90deg);
+}
+
+input:checked + .item__title {
+    background-color: var(--other-color-yellow);
+    color: var(--main-color-black);
+}
+
+.mail__content {
+    max-width: 472px;
+}
+
+.mail__title {
+    font-family: var(--font-gotham);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 130%;
+}
+
+.mail__text {
+    font-family: var(--font-gotham);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 140%;    
+}
+.mail__text a {
+    color: var(--primary-color-blue);
+    border-bottom: 1px solid var(--primary-color-yellow);
+}
