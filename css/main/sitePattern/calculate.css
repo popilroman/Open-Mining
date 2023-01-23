@@ -14,7 +14,7 @@
     
 
     position: absolute;
-    top: 141px; left: 0; bottom: 0; right: -2px;
+    top: 141px; left: 0; bottom: 0; right: 0;
     z-index: -2;
 }
 .calculate::before {
@@ -27,7 +27,7 @@
     
 
     position: absolute;
-    top: -12px; left: 0; bottom: 0; right: -7px;
+    top: -12px; left: 0; bottom: 0; right: 0;
     z-index: -2;
 }
 
