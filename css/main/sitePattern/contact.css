@@ -157,4 +157,6 @@ input.form__input:not(:last-child) {
     border: none;
 
     width: auto;
+
+    cursor: pointer;
 }
