@@ -38,3 +38,43 @@ body {
     color: var(--main-color-black);
     background-color: var(--main-color-lightgray);
 }
+
+/* ------ Responsive ------ */
+
+/* 1200px - 1400px */
+@media screen and (max-width: 1400px) {
+    .container {
+        max-width: 1140px !important;
+    }
+}
+
+/* 992px - 1200px */
+@media screen and (max-width: 1200px) {
+    .container {
+        max-width: 960px;
+    }  
+}
+
+/* 768px - 992px  */
+@media screen and (max-width: 992px) {
+    .container {
+        max-width: 720px;
+    } 
+}
+
+/* 576px - 768px */
+@media screen and (max-width: 768px) {
+    .container {
+        max-width: 540px;
+    } 
+    
+}
+
+/* 0 - 576px */
+@media screen and (max-width: 576px) {
+    .container {
+        max-width: 90%;
+    }
+}
+
+/* ______ Responsive ______ */
