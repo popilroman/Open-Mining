@@ -31,6 +31,11 @@
     margin-bottom: 60px;
 }
 
+.menu__item-nested {
+    width: fit-content;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+}
 
 .menu__item-nested:not(:last-child) {
     margin-bottom: 39px;
