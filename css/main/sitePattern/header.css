@@ -9,6 +9,8 @@
     align-items: center;
     
     max-width: 100%;
+
+    position: relative;
 }
 
 .menu__list {
@@ -84,33 +86,152 @@
     color: --main-color-gray;
 }
 
+.menu__hamburger {
+    position: relative;
+
+    display: block;
+    width: 24px; height: 14px;
+
+    background-color: transparent;
+
+    margin-right: 28px;
+
+    cursor: pointer;
+
+    display: none;
+}
+
+.menu__hamburger span {
+    position: absolute;
+    top: calc(50% - 1px);
+
+    width: 24px; height: 2px;
+
+    border-radius: 2px;
+
+    background-color: var(--primary-color-ligthgreen);
+}
+.menu__hamburger span::after, .menu__hamburger span::before {
+    content: "";
+
+    position: absolute;
+
+    width: 24px; height: 2px;
+
+    border-radius: 2px;
+
+    background-color: var(--primary-color-ligthgreen);
+
+    transition: all 0.2s ease;
+}
+.menu__hamburger span::after {
+    transform: translateY(300%);
+}
+.menu__hamburger span::before {
+    transform: translateY(-300%);
+}
+
+span.menu__span-click {
+    height: 0;
+}
+.menu__hamburger .menu__span-click::after {
+    transform: rotate(45deg);
+}
+.menu__hamburger .menu__span-click::before {
+    transform: rotate(-45deg);
+}
+
+header nav.menu_visible {
+    position: absolute;
+    right: 28px; top: 100%;
+    z-index: 99;
+
+    display: block;
+
+    background-color: rgba(225, 225, 225, 0.7);
+
+    padding: 20px;
+}
+.menu_visible .menu__list {
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+
+
+
 
 /* ------ Responsive ------ */
 
 /* 1200px - 1400px */
 @media screen and (max-width: 1400px) {
-    
+    .menu__link {
+        font-size: 18px;   
+    }
+
+    header .button {
+        font-size: 18px;
+
+        width: 200px;
+    }
 }
 
 /* 992px - 1200px */
 @media screen and (max-width: 1200px) {
-     
+    .menu__item:not(:last-child) {
+        margin-right: 56px;
+    }     
+
+    header .button {
+        width: 180px;
+    }
 }
 
 /* 768px - 992px  */
 @media screen and (max-width: 992px) {
+    header .menu {
+        display: none;
+    }  
+    .menu__hamburger {
+        display: block;
+    }
     
+    .logo-main {
+        width: 120px; height: 48px;
+    }
+
+    .menu__link {
+        font-size: 18px;
+    }
+
+    .menu__list .menu__item {
+        margin: 0px 0px 20px 0px;
+    }
 }
 
 /* 576px - 768px */
 @media screen and (max-width: 768px) {
-    
+    .menu__link {
+        font-size: 16px;
+    }   
+    header .button {
+        font-size: 16px;
+
+        width: 170px;
+    } 
     
 }
 
 /* 0 - 576px */
 @media screen and (max-width: 576px) {
-    
+    .menu__link {
+        font-size: 14px;
+    } 
+    header .button {
+        font-size: 14px;
+
+        width: 150px;
+    }    
 }
 
 /* ______ Responsive ______ */
