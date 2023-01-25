@@ -219,6 +219,10 @@ header nav.menu_visible {
 
         width: 170px;
     } 
+
+    .header {
+        padding-bottom: 60px;
+    }
     
 }
 
