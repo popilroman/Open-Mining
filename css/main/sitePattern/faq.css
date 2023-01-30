@@ -7,9 +7,9 @@
     flex-direction: column;
     align-items: center;
 
-    background-image: url(../../../img/svg/background/spot/spot_4.svg);
+    background-image: url(../../../img/svg/background/spot/spot_4_cut.svg);
     background-repeat: no-repeat;
-    background-position: top 0px right -890px;
+    background-position: top 0 right 0;
 }
 
 .faq__title {
@@ -104,7 +104,7 @@
 }
 
 .faq__item input:checked ~ .item__content .item__text {
-    height: 166px;
+    height: inherit;
 }
 
 .faq__item input:checked + .item__title span {
@@ -137,3 +137,119 @@ input:checked + .item__title {
     color: var(--primary-color-blue);
     border-bottom: 1px solid var(--primary-color-yellow);
 }
+
+
+/* ------ Responsive ------ */
+/* 1200px - 1400px */
+@media screen and (max-width: 1400px) {
+    .faq__title {
+        font-size: 40px;
+    }   
+
+    .mail__title {
+        font-size: 30px;
+    }
+    
+    .faq__list {
+        width: 60%;
+    }
+    .faq__item {
+        width: 100%;
+    }
+
+    .faq__mail {
+        width: 30%;
+    }
+}
+/* 992px - 1200px */
+@media screen and (max-width: 1200px) {
+    .faq__item input:checked ~ .item__content {
+        height: 220px;
+    }  
+    
+    .faq__wrapper {
+        background-size: 80%;
+    }
+}
+/* 768px - 992px  */
+@media screen and (max-width: 992px) {
+
+    .faq__main {
+        justify-content: space-between;
+    }
+
+    .faq__item input:checked ~ .item__content {
+        height: 270px;
+    } 
+}
+/* 576px - 768px */
+@media screen and (max-width: 768px) {
+    .faq__item input:checked ~ .item__content {
+        height: calc(175px);
+    } 
+
+    .faq__title {
+        font-size: 30px;
+    }
+
+    .faq__main {
+        flex-direction: column;
+
+        align-items: center;
+    }   
+    .faq__list {
+        width: 100%;
+        
+        margin-bottom: 40px;
+    }
+    .item__title {
+        font-size: 20px;
+    }
+    .item__text {
+        font-size: 16px;
+    }
+
+    .faq__mail {
+        width: 90%;
+
+        align-self: flex-start;   
+    }
+
+    .mail__title {
+        font-size: 20px;
+    }
+    .mail__text {
+        font-size: 16px;
+    }
+}
+/* 0 - 576px */
+@media screen and (max-width: 576px) {
+    .faq__item input:checked ~ .item__content {
+        height: 280px;
+    } 
+
+    .faq__title {
+        font-size: 24px;
+    }
+
+    .item__title {
+        font-size: 18px;
+    }
+    .item__text {
+        font-size: 14px;
+    }
+
+    .faq__mail {
+        width: 90%;
+
+        align-self: flex-start;   
+    }
+
+    .mail__title {
+        font-size: 18px;
+    }
+    .mail__text {
+        font-size: 14px;
+    }
+}
+/* ______ Responsive ______ */
