@@ -253,6 +253,10 @@
 }
 /* 768px - 992px  */
 @media screen and (max-width: 992px) {
+    .warranty__title {
+        font-size: 35px;
+    } 
+
     .warranty__list {
         flex-wrap: wrap;
     }  

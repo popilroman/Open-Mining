@@ -163,6 +163,10 @@ input:checked + .item__title {
 }
 /* 992px - 1200px */
 @media screen and (max-width: 1200px) {
+    .faq__title {
+        font-size: 35px;
+    }
+
     .faq__item input:checked ~ .item__content {
         height: 220px;
     }  
