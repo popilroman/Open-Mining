@@ -303,5 +303,11 @@
     .btn__miningWay {
         font-size: 14px;
     }
+
+    .advantages__spot {
+        width: 100%;
+
+        top: 10%; left: -30%;
+    }
 }
 /* ______ Responsive ______ */
